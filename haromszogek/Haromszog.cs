@@ -54,6 +54,15 @@ namespace haromszogek
             }
             return adatok;
         }
+
+        public Haromszog(string sor)
+        {
+            string[] adatok = sor.Split(';');
+            aOldal = Convert.ToDouble(adatok[0]);
+            bOldal = Convert.ToDouble(adatok[1]);
+            cOldal = Convert.ToDouble(adatok[2]);
+            Szerk();
+        }
         public Haromszog(double aOldal, double bOldal, double cOldal)
         {
             this.aOldal = aOldal;
